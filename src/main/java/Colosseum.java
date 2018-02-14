@@ -110,17 +110,30 @@ public class Colosseum {
      * You do not need to modify this function.
      */
     public static void initializePokemon() {
+
+        //String pokemon1 = new String("Charizard");
+        //String pokemon2 = new String("Squirtle");
+
+        Scanner lineScanner = new Scanner(System.in);
+        System.out.println("Enter First Pokemon: ");
+        String pokemon1 = lineScanner.nextLine();
+        Scanner lineScanner2 = new Scanner(System.in);
+        System.out.println("Enter Second Pokemon: ");
+        String pokemon2 = lineScanner2.nextLine();
+        //System.out.println("This results in the following multiplication table: ");
+
+
         System.out.println("Player 1, build your Pokemon!");
         System.out.println("=================");
         firstPokemon = buildPokemon();
-        firstPokemon.name = "Chuchu";
+        firstPokemon.name = pokemon1;
 
         System.out.println("");
 
         System.out.println("Player 2, build your Pokemon!");
         System.out.println("==================");
         secondPokemon = buildPokemon();
-        secondPokemon.name = "Xyz";
+        secondPokemon.name = pokemon2;
     }
 
     /**
