@@ -73,6 +73,17 @@ public class Colosseum {
      */
     public static Pokemon buildPokemon() {
         Pokemon tempPokemon = new Pokemon();
+
+
+        Scanner lineScanner = new Scanner(System.in);
+        System.out.println("Enter Max Health Points: ");
+        int healthPoints = Integer.parseInt(lineScanner.nextLine());
+        Scanner lineScanner2 = new Scanner(System.in);
+        System.out.println("Enter Attack Level: ");
+        int attack = Integer.parseInt(lineScanner2.nextLine());
+
+        tempPokemon.hitPoints = healthPoints;
+        tempPokemon.attackLevel = attack;
         return tempPokemon;
     }
 
@@ -89,9 +100,7 @@ public class Colosseum {
      * <p>
      * Implement this function.
      */
-    public static void printWhoIsAhead() {
-        System.out.println("Implement me!");
-    }
+    public static void printWhoIsAhead() { System.out.println("Implement me!"); }
 
     /**
      * Prints out the overall winner of the battle.
